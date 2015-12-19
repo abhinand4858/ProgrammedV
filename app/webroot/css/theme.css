@@ -38,7 +38,7 @@ select{
 	border-right: #FFF 1px solid;
 }
 #top-panel{
-	background:white;
+	background:#FFF;
 }
 table{
 	background:none;
@@ -54,6 +54,7 @@ thead{
 }
 #footer{
 	background:#FFF;
+        width: 100%
 }
 #box{
 	border:1px solid #d9e6f0;
