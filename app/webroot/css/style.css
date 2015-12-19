@@ -64,7 +64,7 @@ margin-top:20px;
 	padding:5px;
 	margin-top:10px;
         height: 18px;
-        width: 1000px;
+        width: 100%;
 }
 #box h3{
 	padding:5px;
@@ -75,7 +75,7 @@ margin-top:20px;
 *********************/
 #sidebar ul{
 	list-style:none;
-	line-height:22px;
+	line-height:20px;
 }
 #sidebar ul li a,#sidebar ul li a:visited{
 	padding-left:19px;
@@ -91,14 +91,14 @@ margin-top:20px;
 }*/
 #sidebar h3{
 	padding:2px;
-	font-size:14px;
+	font-size:17px;
 }
 /*********************
   TopMenu, Top-Panel
 *********************/
 #topmenu{
 	margin-top:15px;
-	width:1000px;
+	width:100%;
 	float:right;
 	voice-family:inherit;
 }
@@ -119,11 +119,11 @@ margin-top:20px;
 
 }
 #top-panel{
-	background:#0a0;
+	background:#FFF;
 	padding:5px;
-	height:30px;
+	height:20px;
 	float:left;
-	width:1000px;
+	width:100%;
 }
 #top-panel ul{
 	list-style:none;
@@ -216,8 +216,8 @@ a#mixswitch {
 }
 #credits{
 clear:both;
-	width:400px;
-	float:left;
+	width:100%;
+	
 }
 /*********************
 		Tables
@@ -229,7 +229,7 @@ table{
 	width:98%;
 }
 td, th{
-	padding: 2px;
+	padding: 4px;
 }
 thead{
 
@@ -241,7 +241,7 @@ thead{
 	display:inline;
 }
 #infobox{
-	width:365px;
+	width:100%;
 	float:left;
 	margin-top:10px;
 }
@@ -300,6 +300,7 @@ thead{
 form{
 	padding:10px;
 	margin:0 auto;
+        
 }
 fieldset {
 	display:block;

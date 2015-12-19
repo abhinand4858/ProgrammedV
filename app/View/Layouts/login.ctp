@@ -19,10 +19,11 @@
 <body>
     <div id="container">
     <div id="header">
-            <img src="logo.jpg">
+            <?php echo $this->Html->image('logo12.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
     <div id="topmenu">
     </div>
     </div>
+        <br><br>
     <div id="top-panel">
     </div>
     <div id="wrapper">
@@ -33,12 +34,8 @@
         </div>
     </div>
     <div id="footer">
-    <div id="credits">
-            Web Development by Abhinand</a>
-
     </div>
     </div>
-</div>
 <?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
