@@ -7,11 +7,11 @@
 </title>
 <?php
     echo $this->Html->meta('icon');
-    echo $this->Html->css('theme');
+    echo $this->Html->css('theme');    
     echo $this->Html->css('style');
     echo $this->Html->css('jquery-ui-1.8.17.custom');
-    echo $this->Html->css('tipsy');
-    echo $this->Html->script(array('jquery-1.7.1.min.js','jquery-ui-1.8.17.custom.min.js','jquery.tipsy.js','default.js'));
+    echo $this->Html->css('tipsy');    
+    echo $this->Html->script(array('jquery-1.7.1.min.js','jquery-ui-1.8.17.custom.min.js','jquery.tipsy.js','default.js')); 
     echo $scripts_for_layout;
 ?>
 </head>
@@ -19,23 +19,25 @@
 <body>
     <div id="container">
     <div id="header">
-            <?php echo $this->Html->image('logo12.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
+            <?php echo $this->Html->image('logo.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
     <div id="topmenu">
     </div>
     </div>
-        <br><br>
     <div id="top-panel">
     </div>
     <div id="wrapper">
         <div id="content">
         <?php echo $this->Session->flash(); ?>
-        <?php echo $this->Session->flash('auth'); ?>
+        <?php echo $this->Session->flash('auth'); ?>            
         <?php echo $content_for_layout; ?>
         </div>
     </div>
     <div id="footer">
+    <div id="credits">
+                        
     </div>
     </div>
-<?php echo $this->element('sql_dump'); ?>
+</div>
+<?php echo $this->element('sql_dump'); ?>    
 </body>
 </html>

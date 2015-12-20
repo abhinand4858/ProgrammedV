@@ -1,5 +1,5 @@
 body{
-	background:#006600 url(../img/bg_blue.jpg) repeat-x top;
+	background:#c0c0c0 url(../img/bg_blue.jpg) repeat-x top;
 	color: #202020;
 }
 a, a:visited{
@@ -12,7 +12,7 @@ select{
 	border:1px solid #d9e6f0;
 }
 #header h2{
-	color: white;
+	color:#FFF;
 }
 #content{
 	background:#FFF;
@@ -39,13 +39,14 @@ select{
 }
 #top-panel{
 	background:#FFF;
+        width: 100%;
 }
 table{
 	background:none;
 }
 td, th{
 	border:1px solid #d9e6f0;
-}
+} 
 thead{
 	background:#f3f9ff;
 }
@@ -54,7 +55,7 @@ thead{
 }
 #footer{
 	background:#FFF;
-        width: 100%
+        width: 100%;
 }
 #box{
 	border:1px solid #d9e6f0;

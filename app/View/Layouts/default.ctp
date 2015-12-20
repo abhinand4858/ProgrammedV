@@ -6,16 +6,13 @@
         <?php echo $title_for_layout; ?>
 </title>
 <?php
-
     echo $this->Html->meta('icon');
-    echo $this->Html->css('bootstrap.min.css');
-    echo $this->Html->css('theme');
+    echo $this->Html->css('theme');    
     echo $this->Html->css('style');
     echo $this->Html->css('jquery-ui-1.8.17.custom');
     echo $this->Html->css('tipsy');
     echo $this->Html->css('jquery.ui.stars');
-    echo $this->Html->script('boostrap.min.js');
-    echo $this->Html->script(array('jquery-1.7.1.min.js','jquery-ui-1.8.17.custom.min.js','jquery.tipsy.js','default.js'));
+    echo $this->Html->script(array('jquery-1.7.1.min.js','jquery-ui-1.8.17.custom.min.js','jquery.tipsy.js','default.js')); 
     echo $scripts_for_layout;
 ?>
 <script type="text/javascript">
@@ -26,26 +23,28 @@
 <body>
     <div id="container">
     <div id="header">
-        <?php echo $this->Html->image('logo12.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
+        
+            <?php echo $this->Html->image('logo.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
             <span class="floatRight">
-                <?php echo AuthComponent::user('username'); ?> |
-                <?php echo $this->Html->link(__('Logout'), array('plugin' => null,'controller' => 'users', 'action' => 'logout'),array('class'=>'topLink')); ?>
+            <h2>    
+                <?php echo AuthComponent::user('username'); ?> | 
+                <?php echo $this->Html->link(__('Logout'), array('plugin' => null,'controller' => 'users', 'action' => 'logout'),array('class'=>'topLink')); ?>                
+            </h2>
             </span>
-        </h2>
     <div id="topmenu">
-        <div class="ui-tabs ui-widget ui-corner-all">
-        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-corner-all floatRight">
-            <?php
+        <div class="ui-tabs ui-widget ui-corner-all">            
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-corner-all">
+            <?php 
             $cssDefaultClass = 'ui-state-default ui-corner-top';
             $cssCurrentClass = 'ui-state-default ui-corner-top ui-tabs-selected ui-state-active';
             $ctrl = $this->params['controller'];
             ?>
-
-            <?php $cssClass = ( $ctrl == 'clients') ? $cssCurrentClass : $cssDefaultClass; ?>
-            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Clients'), array('plugin' => null,'controller' => 'clients', 'action' => 'index')); ?></li>
-
+            
             <?php $cssClass = ( $ctrl == 'contacts') ? $cssCurrentClass : $cssDefaultClass; ?>
             <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Contacts'), array('plugin' => null,'controller' => 'contacts', 'action' => 'index')); ?></li>
+            
+            <?php $cssClass = ( $ctrl == 'clients') ? $cssCurrentClass : $cssDefaultClass; ?>
+            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Clients'), array('plugin' => null,'controller' => 'clients', 'action' => 'index')); ?></li>
 
             <?php $cssClass = ( $ctrl == 'services' || $ctrl == 'professionals_services') ? $cssCurrentClass : $cssDefaultClass; ?>
             <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Services'), array('plugin' => null,'controller' => 'services', 'action' => 'index')); ?></li>
@@ -58,15 +57,15 @@
 
             <?php $cssClass = ( $ctrl == 'report_manager') ? $cssCurrentClass : $cssDefaultClass; ?>
             <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Reports'), array('plugin' => 'report_manager','controller' => null, 'action' => 'reports')); ?></li>
-
-            <?php
+            
+            <?php 
             if ( AuthComponent::user('role') == "admin" ) {
-                if ( $ctrl == 'client_categories' ||
-                     $ctrl == 'client_types' ||
+                if ( $ctrl == 'client_categories' || 
+                     $ctrl == 'client_types' ||    
                      $ctrl == 'service_states' ||
                      $ctrl == 'service_types' ||
                      $ctrl == 'users' ||
-                     $ctrl == 'settings' )
+                     $ctrl == 'settings' ) 
                     $cssClass = $cssCurrentClass;
                 else
                     $cssClass = $cssDefaultClass;
@@ -79,12 +78,11 @@
         </div>
     </div>
     </div>
-
     <div id="top-panel">
         <div id="panel">
-                <?php
-                if ( $ctrl == 'client_categories' ||
-                     $ctrl == 'client_types' ||
+                <?php 
+                if ( $ctrl == 'client_categories' || 
+                     $ctrl == 'client_types' ||    
                      $ctrl == 'service_states' ||
                      $ctrl == 'service_types' ||
                      $ctrl == 'users' ||
@@ -93,10 +91,10 @@
                 } else {
                     if ( $this->params['action'] == 'index' || $this->params['action'] == 'find' ) {
                         if ( $this->_getElementFileName($ctrl.DS.'panel') )
-                            echo $this->element($ctrl.DS.'panel');
+                            echo $this->element($ctrl.DS.'panel');                            
                     }
                 }
-                ?>
+                ?>            
         </div>
     </div>
     <div id="wrapper">
@@ -104,17 +102,18 @@
         <?php echo $this->Session->flash(); ?>
         <?php echo $content_for_layout; ?>
         </div>
-        <?php
+        <?php 
         if ( $this->params['action'] == 'index' && $this->_getElementFileName($ctrl.DS.'sidebar') )
             echo $this->element($ctrl.DS.'sidebar');
         ?>
     </div>
     <div id="footer">
     <div id="credits">
-            Web Development by
+            Web Development by <a target="blank" href="http://www.smartbyte.com.br">Smartbyte</a> | 
+            Template by <a target="blank" href="http://www.bloganje.com">Bloganje</a>            
     </div>
     </div>
 </div>
-<?php echo $this->element('sql_dump'); ?>
+<?php echo $this->element('sql_dump'); ?>    
 </body>
 </html>

@@ -7,7 +7,7 @@
 }
 img, div,a { behavior: url(css/iepngfix.htc) }
 body{
-	font-size: 17px;
+	font-size: 12px;
 	font-family: Arial, Tahoma, Verdana;
 }
 a, a:visited{
@@ -33,14 +33,12 @@ select{
 	Structure
 *********************/
 #container{
-	width:auto;
+	width:960px;
 	margin-left:auto;
-	margin-right:auto;
-        background: #FFF;
+	margin-right: auto;
 }
 #header{
-	width:auto;
-       
+	width:100%;
 }
 #header h2{
 margin-top:20px;
@@ -75,7 +73,7 @@ margin-top:20px;
 *********************/
 #sidebar ul{
 	list-style:none;
-	line-height:20px;
+	line-height:22px;
 }
 #sidebar ul li a,#sidebar ul li a:visited{
 	padding-left:19px;
@@ -91,7 +89,7 @@ margin-top:20px;
 }*/
 #sidebar h3{
 	padding:2px;
-	font-size:17px;
+	font-size:14px;
 }
 /*********************
   TopMenu, Top-Panel
@@ -99,7 +97,7 @@ margin-top:20px;
 #topmenu{
 	margin-top:15px;
 	width:100%;
-	float:right;
+	float:left;
 	voice-family:inherit;
 }
 #topmenu ul{
@@ -116,12 +114,12 @@ margin-top:20px;
 #topmenu .current a, #topmenu .current a:hover, #topmenu .current a:visited{
 	padding:5px 12px 5px 12px;
 	font-weight:bold;
-
+	
 }
 #top-panel{
-	background:#FFF;
+	background:#8CC63F;
 	padding:5px;
-	height:20px;
+	height:35px;
 	float:left;
 	width:100%;
 }
@@ -134,10 +132,11 @@ margin-top:20px;
 }
 #top-panel ul li a{
 	padding-left:19px;
-	text-decoration:none;
-	margin:0 3px;
-	display:inline-block;
-        font-size: 25px;
+	/*text-decoration:none;*/
+	margin:3px;
+	display: inline-block;
+        font-size: 18px;
+        font-family: cursive;
 }
 #top-panel a:hover{
 	text-decoration:underline;
@@ -216,8 +215,8 @@ a#mixswitch {
 }
 #credits{
 clear:both;
-	width:100%;
-	
+	width:400px;
+	float:left;
 }
 /*********************
 		Tables
@@ -229,8 +228,8 @@ table{
 	width:98%;
 }
 td, th{
-	padding: 4px;
-}
+	padding: 2px;
+} 
 thead{
 
 }
@@ -241,7 +240,7 @@ thead{
 	display:inline;
 }
 #infobox{
-	width:100%;
+	width:365px;
 	float:left;
 	margin-top:10px;
 }
@@ -295,12 +294,11 @@ thead{
     clear:left;
     float: left;
     width:100%;
-}
-
+}                
+                
 form{
 	padding:10px;
-	margin:0 auto;
-        
+	margin:auto;
 }
 fieldset {
 	display:block;
@@ -332,12 +330,12 @@ legend {
 
 .input input {
     float:left;
-    display: block;
+    display: block; 
 }
 
 .input.text.required.error {
     width:100%;
-}
+} 
 
 select {
 /*	margin-left:5px;*/
@@ -361,7 +359,7 @@ optgroup option {
 .submit input[type=submit],button[type=reset] {
     border: none;
     background: transparent;
-    color: #2E6E9E;
+    color: #2E6E9E;    
     font-weight: bold;
     height: 18.5px;
 }
@@ -379,12 +377,39 @@ input[type=checkbox] {
 	padding-left:19px;
 	text-decoration:none;
 	height:20px;
-        font-size:12px;
+	font-size:12px;
 	margin:0 3px;
 	display:inline-block;
 	line-height:20px;
 }
+/*.user{background:transparent url(../img/icons/user.png) no-repeat left;}
+.useradd{background:transparent url(../img/icons/user_add.png) no-repeat left;}
+.group{background:transparent url(../img/icons/group.png) no-repeat left;}
+.search{background:transparent url(../img/icons/magnifier.png) no-repeat left;}
+.online{background:transparent url(../img/icons/world.png) no-repeat left;}
+.pagenew{background:transparent url(../img/icons/page_add.png) no-repeat left;}
+.rss{background:transparent url(../img/icons/rss.png) no-repeat left;}
+.feed{background:transparent url(../img/icons/feed.png) no-repeat left;}
+.report{background:transparent url(../img/icons/report.png) no-repeat left;}
+.house{background:transparent url(../img/icons/house.png) no-repeat left;}
+.manage{background:transparent url(../img/icons/cog.png) no-repeat left;}
+.manage_page{background:transparent url(../img/icons/page_gear.png) no-repeat left;}
+.folder{background:transparent url(../img/icons/folder.png) no-repeat left;}
+.promotions{background:transparent url(../img/icons/coins.png) no-repeat left;}
+.cart{background:transparent url(../img/icons/cart.png) no-repeat left;}
+.folder_table{background:transparent url(../img/icons/folder_page.png) no-repeat left;}
+.shipping{background:transparent url(../img/icons/car.png) no-repeat left;}
+.invoices{background:transparent url(../img/icons/page_white_text_width.png) no-repeat left;}
+.addorder{background:transparent url(../img/icons/folder_page_add.png) no-repeat left;}
+.add{background:transparent url(../img/icons/add.png) no-repeat left;}
+.app_add{background:transparent url(../img/icons/application_add.png) no-repeat left;}
+.report_seo{background:transparent url(../img/icons/report_link.png) no-repeat left;}
+.modules{background:transparent url(../img/icons/bricks.png) no-repeat left;}
+.modules_manage{background:transparent url(../img/icons/bricks_gear.png) no-repeat left;}*/
 
+/*#sidebar ul li {
+    background:transparent url(../img/add.png) no-repeat left;
+}*/
 .sidebar-top-item {
     background: none;
 }
@@ -392,12 +417,12 @@ table tr td .actions {
     width: 80px;
 }
 
-.currentPage {
-    display: inline-block;
-    width:50px;
-    background-color: white;
-    border: solid 1px black;
-    margin-left: 4px;
+.currentPage { 
+    display: inline-block;    
+    width:50px; 
+    background-color: white; 
+    border: solid 1px black; 
+    margin-left: 4px; 
     margin-right: 4px;
     text-align: center;
     font-weight: bold;
@@ -497,7 +522,7 @@ dl dd {
 }
 
 .actions ul {
-  width: 900px;
+  width: 900px;  
 }
 
 table tbody tr th.actions {
@@ -511,7 +536,7 @@ table tbody tr td.actions {
     width: 140px;
     float: none;
     clear: none;
-    margin-bottom: 0;
+    margin-bottom: 0;    
 }
 
 #tabs {
@@ -527,7 +552,7 @@ table tbody tr td.actions {
 }
 
 #wrapper {
-    width: 1000px;
+    width: 100%;
 }
 #panel label {
     margin-top: 3px;
@@ -539,7 +564,7 @@ table tbody tr td.actions {
 
 #panel select {
     font-size: 11px;
-    margin-right: 10px;
+    margin-right: 10px;    
 }
 
 #panel input {
@@ -554,7 +579,7 @@ table tbody tr td.actions {
 }
 
 #panel .submit,.ui-button-text {
-    height: 18px;
+    height: 18px;    
 }
 
 #panel {

@@ -11,5 +11,5 @@
                     echo $this->Form->input('tmp_password',array('type' => 'hidden','value'=>''));
             ?>
             </fieldset>
-    <?php echo $this->Form->end(__('Submit','true') );?>
+    <?php echo $this->Form->end(__('Submit', true));?>
 </div>

@@ -6,5 +6,4 @@
     echo $this->Form->input('password',array('size'=>'10'));
 ?>
 </fieldset>
-<button><?php echo $this->Form->end('Login'); ?></button>
-
+<?php echo $this->Form->end('Login'); ?>

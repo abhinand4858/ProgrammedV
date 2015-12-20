@@ -1,6 +1,19 @@
 <?php
 /**
- *
+    This file is part of OSM - Open Service Manager.
+
+    OSM - Open Service Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    OSM - Open Service Manager is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with OSM - Open Service Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 App::uses('AppController', 'Controller');
 /**
@@ -26,7 +39,7 @@ public function beforeFilter() {
 }
 
 public function login() {
-    $this->layout = 'login';
+    $this->layout = 'login';   
     if ( $this->request->is('post')) {
         if ($this->Auth->login()) {
             return $this->redirect($this->Auth->redirect());
@@ -36,22 +49,22 @@ public function login() {
     }
 }
 
-public function logout() {
-    $this->redirect($this->Auth->logout());
-}
+public function logout() {    
+    $this->redirect($this->Auth->logout());    
+}	 
 
 public function passwordChange($id = null) {
     if (empty($this->request->data)) {
            $this->request->data = $this->User->read(null, $id);
-    } else {
+    } else {       
        if ( isset($this->request->data['User']['tmp_password']) )
                $this->request->data['User']['tmp_password'] = $this->Auth->password($this->request->data['User']['new_password']);
        if ($this->User->save($this->request->data)) {
-               $this->Session->setFlash(__('Password updated successfully', true),'default',array('class'=>'success-msg'));
+               $this->Session->setFlash(__('Password updated successfully', true),'default',array('class'=>'success-msg')); 
                $this->redirect(array('action'=>'index'));
        } else {
                $this->Session->setFlash(__('Passwords do not match. Please try again', true),'default',array('class'=>'error-msg'));
-       }
-    }
+       }            
+    }        
 }
 }
