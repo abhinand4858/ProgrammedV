@@ -39,7 +39,10 @@ select{
 }
 #top-panel{
 	background:#FFF;
+<<<<<<< HEAD
         width: 100%;
+=======
+>>>>>>> a22d666d7653a3396cd21b9b0ea25e085830c3a7
 }
 table{
 	background:none;
@@ -55,7 +58,11 @@ thead{
 }
 #footer{
 	background:#FFF;
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: 100%
+>>>>>>> a22d666d7653a3396cd21b9b0ea25e085830c3a7
 }
 #box{
 	border:1px solid #d9e6f0;

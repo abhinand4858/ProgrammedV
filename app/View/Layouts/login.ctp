@@ -19,10 +19,15 @@
 <body>
     <div id="container">
     <div id="header">
+<<<<<<< HEAD
             <?php echo $this->Html->image('logo.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
+=======
+            <?php echo $this->Html->image('logo12.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
+>>>>>>> a22d666d7653a3396cd21b9b0ea25e085830c3a7
     <div id="topmenu">
     </div>
     </div>
+        <br><br>
     <div id="top-panel">
     </div>
     <div id="wrapper">
@@ -33,11 +38,17 @@
         </div>
     </div>
     <div id="footer">
+<<<<<<< HEAD
     <div id="credits">
                         
     </div>
     </div>
 </div>
 <?php echo $this->element('sql_dump'); ?>    
+=======
+    </div>
+    </div>
+<?php echo $this->element('sql_dump'); ?>
+>>>>>>> a22d666d7653a3396cd21b9b0ea25e085830c3a7
 </body>
 </html>

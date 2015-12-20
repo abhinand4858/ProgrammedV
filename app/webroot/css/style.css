@@ -73,7 +73,7 @@ margin-top:20px;
 *********************/
 #sidebar ul{
 	list-style:none;
-	line-height:22px;
+	line-height:20px;
 }
 #sidebar ul li a,#sidebar ul li a:visited{
 	padding-left:19px;
@@ -89,7 +89,7 @@ margin-top:20px;
 }*/
 #sidebar h3{
 	padding:2px;
-	font-size:14px;
+	font-size:17px;
 }
 /*********************
   TopMenu, Top-Panel
@@ -215,8 +215,8 @@ a#mixswitch {
 }
 #credits{
 clear:both;
-	width:400px;
-	float:left;
+	width:100%;
+	
 }
 /*********************
 		Tables
@@ -240,7 +240,7 @@ thead{
 	display:inline;
 }
 #infobox{
-	width:365px;
+	width:100%;
 	float:left;
 	margin-top:10px;
 }
