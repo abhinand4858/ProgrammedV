@@ -26,12 +26,12 @@
         
             <?php echo $this->Html->image('logo.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
             <span class="floatRight">
-            <h2>    
+                <h3 style="color: #000;">    
                 <?php echo AuthComponent::user('username'); ?> | 
                 <?php echo $this->Html->link(__('Logout'), array('plugin' => null,'controller' => 'users', 'action' => 'logout'),array('class'=>'topLink')); ?>                
-            </h2>
+                </h3>
             </span>
-    <div id="topmenu">
+    <div id="topmenu">     
         <div class="ui-tabs ui-widget ui-corner-all">            
         <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-corner-all">
             <?php 
@@ -39,13 +39,6 @@
             $cssCurrentClass = 'ui-state-default ui-corner-top ui-tabs-selected ui-state-active';
             $ctrl = $this->params['controller'];
             ?>
-            
-            <?php $cssClass = ( $ctrl == 'contacts') ? $cssCurrentClass : $cssDefaultClass; ?>
-            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Contacts'), array('plugin' => null,'controller' => 'contacts', 'action' => 'index')); ?></li>
-            
-            <?php $cssClass = ( $ctrl == 'clients') ? $cssCurrentClass : $cssDefaultClass; ?>
-            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Clients'), array('plugin' => null,'controller' => 'clients', 'action' => 'index')); ?></li>
-
             <?php $cssClass = ( $ctrl == 'services' || $ctrl == 'professionals_services') ? $cssCurrentClass : $cssDefaultClass; ?>
             <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Services'), array('plugin' => null,'controller' => 'services', 'action' => 'index')); ?></li>
 
@@ -57,6 +50,12 @@
 
             <?php $cssClass = ( $ctrl == 'report_manager') ? $cssCurrentClass : $cssDefaultClass; ?>
             <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Reports'), array('plugin' => 'report_manager','controller' => null, 'action' => 'reports')); ?></li>
+            
+            <?php $cssClass = ( $ctrl == 'clients') ? $cssCurrentClass : $cssDefaultClass; ?>
+            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Clients'), array('plugin' => null,'controller' => 'clients', 'action' => 'index')); ?></li>
+            
+             <?php $cssClass = ( $ctrl == 'contacts') ? $cssCurrentClass : $cssDefaultClass; ?>
+            <li class="<?php echo $cssClass; ?>"><?php echo $this->Html->link(__('Contacts'), array('plugin' => null,'controller' => 'contacts', 'action' => 'index')); ?></li>
             
             <?php 
             if ( AuthComponent::user('role') == "admin" ) {
@@ -109,8 +108,8 @@
     </div>
     <div id="footer">
     <div id="credits">
-            Web Development by <a target="blank" href="http://www.smartbyte.com.br">Smartbyte</a> | 
-            Template by <a target="blank" href="http://www.bloganje.com">Bloganje</a>            
+            Web Development by <a target="blank" href=""></a> | 
+            Template by <a target="blank" href=""></a>            
     </div>
     </div>
 </div>

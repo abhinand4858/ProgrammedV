@@ -33,17 +33,20 @@ select{
 	Structure
 *********************/
 #container{
-	width:960px;
+        background: #8CC63F;
+	width:90%;
 	margin-left:auto;
 	margin-right: auto;
 }
 #header{
+        background: #FFF;
 	width:100%;
 }
 #header h2{
 margin-top:20px;
 }
 #content{
+        background: #FFF;
 /*	width:940px;*/
         width: 100%;
 	float:left;
@@ -121,10 +124,13 @@ margin-top:20px;
 	padding:5px;
 	height:35px;
 	float:left;
-	width:100%;
+	width:90%;
 }
 #top-panel ul{
 	list-style:none;
+}
+#top-panel li{
+    display: inline;
 }
 #top-panel ul li{
 	display:inline;
@@ -228,7 +234,7 @@ table{
 	width:98%;
 }
 td, th{
-	padding: 2px;
+	padding: 6px;
 } 
 thead{
 
