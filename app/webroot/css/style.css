@@ -137,12 +137,12 @@ margin-top:20px;
 	line-height:25px;
 }
 #top-panel ul li a{
-	padding-left:19px;
+	padding-left:12px;
 	/*text-decoration:none;*/
 	margin:3px;
 	display: inline-block;
-        font-size: 18px;
-        font-family: cursive;
+        font-size: 15px;
+        font-family: sans-serif;
 }
 #top-panel a:hover{
 	text-decoration:underline;

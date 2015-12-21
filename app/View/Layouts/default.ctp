@@ -26,7 +26,7 @@
         
             <?php echo $this->Html->image('logo.jpg', array('alt' => 'ProgrammedV', 'border' => '0', 'data-src' => 'holder.js/100%x100')); ?>
             <span class="floatRight">
-                <h3 style="color: #000;">    
+                <h3 style="color: #000;"> <br></br>   
                 <?php echo AuthComponent::user('username'); ?> | 
                 <?php echo $this->Html->link(__('Logout'), array('plugin' => null,'controller' => 'users', 'action' => 'logout'),array('class'=>'topLink')); ?>                
                 </h3>

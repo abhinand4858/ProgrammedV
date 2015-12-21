@@ -22,11 +22,11 @@ select{
 }
 #sidebar h3{
 	background:#f3f9ff;
-	border-bottom:1px solid #d9e6f0;
+	border-bottom:1px solid ;
 }
 /*#topmenu a,#topmenu a:visited{
 	color:#FFF;
-	background:#7e9dcc;
+	background:#000;
 }
 #topmenu a:hover{
 	color: #FFF;
@@ -39,6 +39,10 @@ select{
 }
 #top-panel{
 	background:#FFF;
+      
+}
+#top-panel .a   {
+    
 }
 table{
 	background:none;
@@ -122,9 +126,11 @@ form#form #button1:hover, form#form #button2:hover {
 }
 
 a.topLink {
-    color:white;
+    color:black;
+    align-self: center;
 }
 
 a.topLink:visited {
-    color:white;
+    color:greenyellow;
 }
+
